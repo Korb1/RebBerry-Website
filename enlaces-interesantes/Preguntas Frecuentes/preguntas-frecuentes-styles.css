@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&display=swap");
+
+:root {
+    --nothing-white: #ffffff;
+    --nothing-black: #000000;
+    --nothing-red: #d71921;
+    --nothing-dark-gray: #14151f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Doto", sans-serif;
+    background-color: var(--nothing-dark-gray);
+    color: var(--nothing-white);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-family: "Jersey 10", sans-serif;
+    color: var(--nothing-red);
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-section {
+    margin-bottom: 40px;
+}
+
+.faq-category {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-category h2 {
+    color: var(--nothing-red);
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 5px 5px;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+.search-container {
+    margin-bottom: 30px;
+}
+
+#faq-search {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--nothing-white);
+    font-size: 16px;
+}
+
+#faq-search::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.back-to-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: var(--nothing-red);
+    color: var(--nothing-white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-home:hover {
+    background-color: #b3141a;
+}
+
+.back-to-home svg {
+    width: 24px;
+    height: 24px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--nothing-red);
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#faq-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.category-button {
+    background-color: var(--nothing-red);
+    color: var(--nothing-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.category-button:hover {
+    background-color: #b3141a;
+}
+
+#contact-form {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#contact-form h2 {
+    color: var(--nothing-red);
+    margin-bottom: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--nothing-white);
+}
+
+#contact-form button {
+    background-color: var(--nothing-red);
+    color: var(--nothing-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #b3141a;
+}

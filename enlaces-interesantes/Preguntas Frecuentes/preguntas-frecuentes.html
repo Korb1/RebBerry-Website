@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="preguntas-frecuentes-styles.css">
+    <title>Preguntas Frecuentes - RecBerry</title>
+</head>
+<body>
+    <a href="../../index.html" class="back-to-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+    </a>
+
+    <div class="container">
+        <h1>Preguntas Frecuentes</h1>
+
+        <div class="search-container">
+            <input type="text" id="faq-search" placeholder="Buscar preguntas...">
+        </div>
+
+        <div id="faq-categories">
+            <button class="category-button" data-category="general">General</button>
+            <button class="category-button" data-category="productos">Productos</button>
+            <button class="category-button" data-category="envios">Envíos</button>
+            <button class="category-button" data-category="devoluciones">Devoluciones</button>
+            <button class="category-button" data-category="cuenta">Cuenta</button>
+        </div>
+
+        <div class="faq-section">
+            <div class="faq-category" data-category="general">
+                <h2>Preguntas Generales</h2>
+                <div class="faq-item">
+                    <div class="faq-question">¿Qué es RecBerry?</div>
+                    <div class="faq-answer">RecBerry es una tienda en línea especializada en productos tecnológicos innovadores y futuristas. Ofrecemos una amplia gama de dispositivos y accesorios de alta calidad para entusiastas de la tecnología.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cómo puedo contactar con el servicio al cliente?</div>
+                    <div class="faq-answer">Puede contactarnos a través de nuestro formulario de contacto en línea, por correo electrónico a support@recberry.com, o llamando a nuestro número de atención al cliente: +34 900 123 456.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cuáles son los horarios de atención al cliente?</div>
+                    <div class="faq-answer">Nuestro equipo de atención al cliente está disponible de lunes a viernes, de 9:00 a 18:00 horas (hora local).</div>
+                </div>
+            </div>
+
+            <div class="faq-category" data-category="productos">
+                <h2>Productos</h2>
+                <div class="faq-item">
+                    <div class="faq-question">¿Todos sus productos son originales?</div>
+                    <div class="faq-answer">Sí, todos nuestros productos son 100% originales y auténticos. Trabajamos directamente con fabricantes y distribuidores autorizados para garantizar la calidad de nuestros productos.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Ofrecen garantía en sus productos?</div>
+                    <div class="faq-answer">Sí, todos nuestros productos vienen con una garantía del fabricante. La duración de la garantía puede variar según el producto, pero generalmente es de 1 a 2 años.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cómo puedo saber si un producto está en stock?</div>
+                    <div class="faq-answer">En la página de cada producto, verá un indicador de disponibilidad. Si un producto está agotado, puede registrarse para recibir una notificación cuando vuelva a estar disponible.</div>
+                </div>
+            </div>
+
+            <div class="faq-category" data-category="envios">
+                <h2>Envíos</h2>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cuánto tiempo tarda en llegar mi pedido?</div>
+                    <div class="faq-answer">Los tiempos de entrega varían según su ubicación. Para envíos nacionales, el tiempo estimado es de 3-5 días hábiles. Para envíos internacionales, puede tomar entre 7-14 días hábiles.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Ofrecen envío gratuito?</div>
+                    <div class="faq-answer">Sí, ofrecemos envío gratuito en pedidos superiores a 100€ para envíos nacionales. Para pedidos internacionales, el envío gratuito se aplica en compras superiores a 200€.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Puedo hacer seguimiento de mi pedido?</div>
+                    <div class="faq-answer">Sí, una vez que su pedido haya sido enviado, recibirá un correo electrónico con un número de seguimiento y un enlace para rastrear su paquete en tiempo real.</div>
+                </div>
+            </div>
+
+            <div class="faq-category" data-category="devoluciones">
+                <h2>Devoluciones</h2>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cuál es su política de devoluciones?</div>
+                    <div class="faq-answer">Aceptamos devoluciones dentro de los 30 días posteriores a la recepción del producto. El artículo debe estar sin usar y en su embalaje original. Los gastos de envío de la devolución corren por cuenta del cliente, a menos que el producto sea defectuoso.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cómo puedo iniciar una devolución?</div>
+                    <div class="faq-answer">Para iniciar una devolución, inicie sesión en su cuenta, vaya a la sección "Mis Pedidos", seleccione el pedido que desea devolver y siga las instrucciones. También puede contactar con nuestro servicio de atención al cliente para obtener ayuda.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cuánto tiempo tarda en procesarse un reembolso?</div>
+                    <div class="faq-answer">Una vez que recibamos y procesemos su devolución, el reembolso se realizará en un plazo de 5-10 días hábiles, dependiendo de su método de pago original.</div>
+                </div>
+            </div>
+
+            <div class="faq-category" data-category="cuenta">
+                <h2>Cuenta</h2>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cómo puedo crear una cuenta?</div>
+                    <div class="faq-answer">Puede crear una cuenta haciendo clic en el botón "Registrarse" en la esquina superior derecha de nuestra página web. Siga las instrucciones para completar su perfil.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Qué hago si olvidé mi contraseña?</div>
+                    <div class="faq-answer">Si ha olvidado su contraseña, haga clic en "¿Olvidó su contraseña?" en la página de inicio de sesión. Se le enviará un correo electrónico con instrucciones para restablecer su contraseña.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cómo puedo actualizar mi información de cuenta?</div>
+                    <div class="faq-answer">Inicie sesión en su cuenta y vaya a la sección "Mi Perfil". Allí podrá actualizar su información personal, dirección de envío y preferencias de comunicación.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-form">
+            <h2>¿No encontraste lo que buscabas?</h2>
+            <p>Contáctanos directamente y te responderemos lo antes posible.</p>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Tu pregunta" rows="4" required></textarea>
+                <button type="submit">Enviar pregunta</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2023 RecBerry. Todos los derechos reservados.</p>
+        </div>
+    </div>
+
+    <script src="preguntas-frecuentes-script.js"></script>
+</body>
+</html>

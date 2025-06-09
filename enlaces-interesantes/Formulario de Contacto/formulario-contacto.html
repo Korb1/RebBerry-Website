@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto - RecBerry</title>
+    <meta name="description" content="Contacta con RecBerry, tu tienda de tecnología innovadora. Estamos aquí para responder tus consultas, proporcionar soporte técnico y atender tus necesidades.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="formulario-contacto_styles.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegación principal">
+            <a href="../../index.html" class="back-to-home" aria-label="Volver a la página principal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Contacta con RecBerry</h1>
+            <section aria-labelledby="contact-form-heading">
+                <h2 id="contact-form-heading" class="visually-hidden">Formulario de Contacto</h2>
+                <form id="contact-form" action="/submit-form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                        <div class="error" id="name-error" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                        <div class="error" id="email-error" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <select id="subject" name="subject" required aria-required="true">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta general</option>
+                            <option value="soporte">Soporte técnico</option>
+                            <option value="ventas">Ventas</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <div class="error" id="subject-error" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" required aria-required="true"></textarea>
+                        <div class="error" id="message-error" aria-live="polite"></div>
+                    </div>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+                <div id="loading" aria-live="assertive" hidden>
+                    <div class="spinner" aria-hidden="true"></div>
+                    <p>Enviando mensaje...</p>
+                </div>
+                <div id="success-message" aria-live="assertive" hidden>
+                    ¡Gracias por contactarnos! Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo pronto.
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2025 RecBerry. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="formulario-contacto_script.js" defer></script>
+</body>
+
+</html>

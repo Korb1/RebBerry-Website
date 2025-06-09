@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&display=swap");
+
+:root {
+    --nothing-white: #ffffff;
+    --nothing-black: #000000;
+    --nothing-red: #d71921;
+    --nothing-dark-gray: #14151f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Doto", sans-serif;
+    background-color: var(--nothing-dark-gray);
+    color: var(--nothing-white);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 20px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Jersey 10", sans-serif;
+    color: var(--nothing-red);
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#contact-form {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--nothing-white);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--nothing-white);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus,
+#contact-form select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--nothing-red);
+}
+
+#contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: var(--nothing-red);
+    color: var(--nothing-white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#contact-form button:hover {
+    background-color: #b3141a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: var(--nothing-red);
+    color: var(--nothing-white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-home:hover {
+    background-color: #b3141a;
+    transform: scale(1.1);
+}
+
+.back-to-home svg {
+    width: 24px;
+    height: 24px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.error {
+    color: var(--nothing-red);
+    font-size: 0.8em;
+    margin-top: 3px;
+    transition: all 0.3s ease;
+}
+
+#success-message {
+    display: none;
+    background-color: rgba(0, 255, 0, 0.1);
+    color: #00ff00;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#loading {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.spinner {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 3px solid var(--nothing-red);
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - RecBerry</title>
+    <meta name="description"
+        content="Inicia sesión en tu cuenta de RecBerry para acceder a nuestros productos tecnológicos innovadores y futuristas.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="inicio-de-sesion_styles.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegación principal">
+            <a href="../../index.html" class="back-to-home" aria-label="Volver a la página principal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Iniciar Sesión</h1>
+        <section>
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                        <div class="icon-container">
+                            <span class="validation-icon" id="emailValidationIcon" aria-hidden="true">✓</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" name="password" required
+                            placeholder="Ingrese su contraseña">
+                        <div class="icon-container">
+                            <span class="validation-icon" id="passwordValidationIcon" aria-hidden="true">✓</span>
+                            <button type="button" class="password-toggle" id="passwordToggle"
+                                aria-label="Mostrar/ocultar contraseña">👁️</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recordarme</label>
+                </div>
+
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+
+        <section class="additional-options">
+            <a href="#" id="forgotPassword">¿Olvidaste tu contraseña?</a>
+            <a href="#" id="createAccount">Crear cuenta</a>
+        </section>
+
+        <div id="loginStatus" role="status" aria-live="polite"></div>
+        <div class="loading" id="loadingIndicator" aria-hidden="true"></div>
+
+        <section class="login-options">
+            <p>O también puedes iniciar sesión con:</p>
+            <nav>
+                <a href="https://accounts.google.com/v3/signin/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fpli%3D1&ec=GAlAwAE&hl=es&authuser=0&ddm=1&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank"
+                    rel="noopener noreferrer">Google</a> /
+                <a href="https://www.facebook.com/?locale=es_ES" target="_blank" rel="noopener noreferrer">Facebook</a>
+                /
+                <a href="https://secure6.store.apple.com/es/shop/signIn?ssi=1AAABlcO0sZwgB1R38xqcUrBUbrVlC5_UxQSILGvzmapXbqwcI2Byad4AAAAbaHR0cHM6Ly93d3cuYXBwbGUuY29tL2VzL3x8AAIBNe8SS5COwgRvw9x99ucKzifVTYCUG1fzGZk4WEIMrYQ" target="_blank" rel="noopener noreferrer">Apple</a>
+            </nav>
+        </section>
+    </main>
+
+    <script src="inicio-de-sesion_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Link CSS externo -->
+    <link rel="stylesheet" href="home-styles.css">
+
+    <title>RecBerry</title>
+</head>
+
+<body>
+
+    <!-- Barra de navegacion superior -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <img src="imagenes/logo-minimalista.png" alt="RecBerry Logo" class="logo-image">
+                </a>
+            </div>
+            <nav class="navbar-menu">
+                <ul>
+                    <li><a href="#home-slider">Inicio</a></li>
+                    <li><a href="#carousel-products">Productos</a></li>
+                    <li><a href="#special-offers">Ofertas</a></li>
+                    <li><a href="#innovation-section">Innovación</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#ai-integration">AI Integration</a></li>
+                </ul>
+            </nav>
+            <div class="navbar-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar productos...">
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <a href="enlaces-interesantes/Inicio de Sesion/inicio-de-sesion.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="enlaces-interesantes/Inicio de Sesion/inicio-de-sesion.html" class="account-icon">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- (incio) Sección principal con información básica -->
+    <section id="home-slider">
+        <div class="slider-container">
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Productos Destacados</h2>
+                    <p>Nuestros clientes han hablado. Conoce los productos más populares que están cambiando la vida de
+                        las personas. Diseño, funcionalidad y tecnología en perfecta armonía.</p>
+                    <button class="slide-btn" data-target="carousel-products">Ver Productos</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Ofertas Exclusivas</h2>
+                    <p>Accede a descuentos especiales en nuestros productos más codiciados. Es tu oportunidad de
+                        experimentar lo último en tecnología a precios increíbles.</p>
+                    <button class="slide-btn" data-target="special-offers">Ver Ofertas</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Innovación RecBerry</h2>
+                    <p>Descubre nuestras últimas creaciones que están redefiniendo el futuro de la tecnología. Desde
+                        dispositivos inteligentes hasta soluciones de IA, estamos a la vanguardia de la innovación.</p>
+                    <button class="slide-btn" data-target="innovation-section">Explorar Novedades</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>RecBerry IA</h2>
+                    <p>Sumérgete en el mundo de la Inteligencia Artificial con nuestras soluciones innovadoras. Descubre
+                        cómo la IA está transformando la forma en que interactuamos con la tecnología.</p>
+                    <button class="slide-btn" data-target="ai-integration">Explorar IA</button>
+                </div>
+            </div>
+        </div>
+        <button class="slider-arrow prev">&#10094;</button>
+        <button class="slider-arrow next">&#10095;</button>
+        <div class="slider-dots"></div>
+    </section>
+
+
+
+    <!-- Sección de productos -->
+    <section class="products-section">
+        <!-- Carousel Slider con los productos de la tienda -->
+        <div class="carousel" id="carousel-products">
+            <div class="list">
+
+                <!-- Producto 1: RecHeadset -->
+                <div class="item">
+
+                    <!-- Breve descripción del producto 1 -->
+                    <img src="imagenes/Productos_Carousel-Slider/headset-product.png">
+                    <div class="introduce">
+                        <div class="title">Rec PRODUCTs</div>
+                        <div class="topic">RecHeadset</div>
+                        <div class="des">
+                            Los auriculares gaming definitivos con sonido envolvente 7.1, cancelación de ruido y diseño
+                            ergonómico para sesiones de juego intensas.
+                        </div>
+                        <button class="seeMore">SEE MORE &#8599</button>
+                    </div>
+
+                    <!-- Descripción detallada del producto 1 -->
+                    <div class="detail">
+                        <div class="title">RecHeadset (1)</div>
+                        <div class="des">
+                            Diseñados para una experiencia de juego inigualable, los RecHeadset (1) ofrecen sonido
+                            envolvente de alta fidelidad, micrófono con cancelación de ruido y almohadillas de espuma
+                            viscoelástica para mayor comodidad. Perfectos para gamers que buscan precisión y confort en
+                            cada
+                            partida.
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>Sonido</p>
+                                <p>Envolvente 7.1</p>
+                            </div>
+                            <div>
+                                <p>Micrófono</p>
+                                <p>Cancelación de ruido avanzada</p>
+                            </div>
+                            <div>
+                                <p>Conectividad</p>
+                                <p>Inalámbrica y cableada</p>
+                            </div>
+                            <div>
+                                <p>Iluminación</p>
+                                <p>RGB personalizable</p>
+                            </div>
+                            <div>
+                                <p>Autonomía</p>
+                                <p>Hasta 20 horas</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button onclick="addToCart(this)" data-product-id="1" data-product-name="RecHeadset"
+                                data-product-price="199.99">AÑADIR AL CARRITO</button>
+                            <button>COMPRAR AHORA</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2: BerrySpeaker -->
+                <div class="item">
+
+                    <!-- Breve descripción del producto 2 -->
+                    <img src="imagenes/Productos_Carousel-Slider/speaker-product1_black.png">
+                    <div class="introduce">
+                        <div class="title">Rec PRODUCTs</div>
+                        <div class="topic">BerrySpeaker</div>
+                        <div class="des">
+                            Disfruta de un sonido cristalino con diseño compacto. BerrySpeaker combina potencia y
+                            portabilidad para ofrecerte la mejor experiencia auditiva.
+                        </div>
+                        <button class="seeMore">SEE MORE &#8599</button>
+                    </div>
+
+                    <!-- Descripción detallada del producto 2 -->
+                    <div class="detail">
+                        <div class="title">BerrySpeaker</div>
+                        <div class="des">
+                            BerrySpeaker es el altavoz que redefine tu experiencia sonora. Con una calidad de audio de
+                            alta
+                            fidelidad, un diseño ultra compacto y una batería de larga duración, es el accesorio
+                            perfecto
+                            para llevarlo a todas partes. Conéctalo fácilmente a tu teléfono o dispositivo y disfruta de
+                            la
+                            música como nunca antes.
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>Tiempo de uso</p>
+                                <p>12 horas</p>
+                            </div>
+                            <div>
+                                <p>Puerto de carga</p>
+                                <p>Type-C</p>
+                            </div>
+                            <div>
+                                <p>Conectividad</p>
+                                <p>Bluetooth 5.0</p>
+                            </div>
+                            <div>
+                                <p>Sonido</p>
+                                <p>Alta fidelidad, 360 grados</p>
+                            </div>
+                            <div>
+                                <p>Dimensiones</p>
+                                <p>10x10x10 cm</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button onclick="addToCart(this)" data-product-id="2" data-product-name="BerrySpeaker"
+                                data-product-price="79.99">AÑADIR AL CARRITO</button>
+                            <button>COMPRAR AHORA</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3: RecBand 2b -->
+                <div class="item">
+
+                    <!-- Breve descripción del producto 3 -->
+                    <img src="imagenes/Productos_Carousel-Slider/band-product1.png">
+                    <div class="introduce">
+                        <div class="title">Rec PRODUCTs</div>
+                        <div class="topic">RecBand 2b</div>
+                        <div class="des">
+                            El futuro del fitness está aquí. RecBand 2b es una pulsera inteligente que monitoriza tu
+                            salud y
+                            actividad con un diseño innovador y materiales premium.
+                        </div>
+                        <button class="seeMore">SEE MORE &#8599</button>
+                    </div>
+
+                    <!-- Descripción detallada del producto 3 -->
+                    <div class="detail">
+                        <div class="title">RecBand 2b</div>
+                        <div class="des">
+                            RecBand 2b es una pulsera inteligente de última generación diseñada para acompañarte en tu
+                            rutina diaria. Con sensores avanzados, monitoriza tu frecuencia cardíaca, calidad de sueño,
+                            y
+                            actividad física. Su diseño minimalista y elegante se adapta perfectamente a cualquier
+                            estilo, y
+                            con su conectividad, podrás mantener un registro detallado de tu bienestar.
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>Duración de la batería</p>
+                                <p>7 días</p>
+                            </div>
+                            <div>
+                                <p>Pantalla</p>
+                                <p>OLED táctil</p>
+                            </div>
+                            <div>
+                                <p>Resistencia al agua</p>
+                                <p>IP68</p>
+                            </div>
+                            <div>
+                                <p>Conectividad</p>
+                                <p>Bluetooth 5.1</p>
+                            </div>
+                            <div>
+                                <p>Compatibilidad</p>
+                                <p>Android, iOS</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button onclick="addToCart(this)" data-product-id="3" data-product-name="RecBand 2b"
+                                data-product-price="129.99">AÑADIR AL CARRITO</button>
+                            <button>COMPRAR AHORA</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4: RecVisuals -->
+                <div class="item">
+
+                    <!-- Breve descripción del producto 4 -->
+                    <img src="imagenes/Productos_Carousel-Slider/visual-product1.png">
+                    <div class="introduce">
+                        <div class="title">Rec PRODUCTs</div>
+                        <div class="topic">RecVisuals</div>
+                        <div class="des">
+                            Lentes de realidad aumentada con inteligencia artificial integrada y pantalla holográfica
+                            para
+                            experiencias visuales inmersivas.
+                        </div>
+                        <button class="seeMore">SEE MORE &#8599</button>
+                    </div>
+
+                    <!-- Descripción detallada del producto 4-->
+                    <div class="detail">
+                        <div class="title">RecVisuals 2b</div>
+                        <div class="des">
+                            RecVisuals 2b transforma la manera en que interactúas con el mundo digital. Con una pantalla
+                            holográfica de alta definición y control por voz, estos lentes inteligentes te ofrecen una
+                            experiencia de realidad aumentada sin igual.
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>Pantalla</p>
+                                <p>MicroLED 4K</p>
+                            </div>
+                            <div>
+                                <p>Procesador</p>
+                                <p>Neural AI Chip</p>
+                            </div>
+                            <div>
+                                <p>Autonomía</p>
+                                <p>10 horas</p>
+                            </div>
+                            <div>
+                                <p>Conectividad</p>
+                                <p>Wi-Fi 6E / Bluetooth 5.4</p>
+                            </div>
+                            <div>
+                                <p>Control</p>
+                                <p>Voz / Gestos</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button onclick="addToCart(this)" data-product-id="4" data-product-name="RecVisuals 2b"
+                                data-product-price="589.99">AÑADIR AL CARRITO</button>
+                            <button>COMPRAR AHORA</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5: RecNtendho -->
+                <div class="item">
+
+                    <!-- Breve descripción del producto 5 -->
+                    <img src="imagenes/Productos_Carousel-Slider/nplay-product1.png">
+                    <div class="introduce">
+                        <div class="title">Rec PRODUCTs</div>
+                        <div class="topic">RecNtendho</div>
+                        <div class="des">
+                            Consola portátil de nueva generación con pantalla flexible y mando ergonómico magnético para
+                            una
+                            experiencia de juego revolucionaria.
+                        </div>
+                        <button class="seeMore">SEE MORE &#8599</button>
+                    </div>
+
+                    <!-- Descripción detallada del producto 5-->
+                    <div class="detail">
+                        <div class="title">RecNtendho</div>
+                        <div class="des">
+                            La RecNtendho es una consola portátil ultra moderna con una pantalla flexible de alta
+                            resolución, gráficos avanzados y una jugabilidad optimizada con controles magnéticos
+                            personalizables.
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>Pantalla</p>
+                                <p>OLED flexible 8”</p>
+                            </div>
+                            <div>
+                                <p>Procesador</p>
+                                <p>Custom AI-GPU</p>
+                            </div>
+                            <div>
+                                <p>Autonomía</p>
+                                <p>12 horas</p>
+                            </div>
+                            <div>
+                                <p>Conectividad</p>
+                                <p>5G / Wi-Fi 6E</p>
+                            </div>
+                            <div>
+                                <p>Almacenamiento</p>
+                                <p>512GB SSD</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button onclick="addToCart(this)" data-product-id="5" data-product-name="RecNtendho"
+                                data-product-price="39.99">AÑADIR AL CARRITO</button>
+                            <button>COMPRAR AHORA</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6: RecBook -->
+                <div class="item">
+
+                    <!-- Breve descripción del producto 6 -->
+                    <img src="imagenes/Productos_Carousel-Slider/laptop-product1.png">
+                    <div class="introduce">
+                        <div class="title">Rec PRODUCTs</div>
+                        <div class="topic">RecBook</div>
+                        <div class="des">
+                            Portátil ultraligero con tecnología de inteligencia artificial y batería de larga duración,
+                            diseñado para profesionales y creadores de contenido.
+                        </div>
+                        <button class="seeMore">SEE MORE &#8599</button>
+                    </div>
+
+                    <!-- Descripción detallada del producto 6-->
+                    <div class="detail">
+                        <div class="title">RecBook</div>
+                        <div class="des">
+                            RecBook es la computadora portátil más avanzada de RecBerry, combinando un diseño
+                            ultraligero
+                            con un potente procesador de inteligencia artificial para productividad y creatividad sin
+                            límites.
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>Pantalla</p>
+                                <p>OLED 16” 4K</p>
+                            </div>
+                            <div>
+                                <p>Procesador</p>
+                                <p>AI Neural Engine</p>
+                            </div>
+                            <div>
+                                <p>RAM</p>
+                                <p>32GB LPDDR5</p>
+                            </div>
+                            <div>
+                                <p>Almacenamiento</p>
+                                <p>1TB SSD NVMe</p>
+                            </div>
+                            <div>
+                                <p>Autonomía</p>
+                                <p>20 horas</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button onclick="addToCart(this)" data-product-id="6" data-product-name="RecBook"
+                                data-product-price="1379.99">AÑADIR AL CARRITO</button>
+                            <button>COMPRAR AHORA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+
+                <!-- Botones para navegar entre los productos -->
+                <button id="prev">⇦</button>
+                <button id="next">⇨</button>
+
+                <!-- Botón para ver todos los productos -->
+                <button id="back">Mostrar todo &#8599</button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Sección de ofertas especiales-->
+    <section id="special-offers" class="special-offers">
+        <h2 class="special-offers-title">Ofertas Especiales</h2>
+        <div class="special-offers-container">
+            <div class="offer-card" data-countdown="2026-12-31T23:59:59">
+                <div class="offer-content">
+                    <h3>RecBerry Pro X</h3>
+                    <p class="original-price">€999.99</p>
+                    <p class="offer-price">€799.99</p>
+                    <div class="offer-timer"></div>
+                    <button class="offer-btn">Comprar Ahora</button>
+                </div>
+            </div>
+            <div class="offer-card" data-countdown="2026-12-31T23:59:59">
+                <div class="offer-content">
+                    <h3>RecBerry Lite</h3>
+                    <p class="original-price">€599.99</p>
+                    <p class="offer-price">€499.99</p>
+                    <div class="offer-timer"></div>
+                    <button class="offer-btn">Comprar Ahora</button>
+                </div>
+            </div>
+            <div class="offer-card" data-countdown="2026-12-31T23:59:59">
+                <div class="offer-content">
+                    <h3>RecBerry Ultra</h3>
+                    <p class="original-price">€1299.99</p>
+                    <p class="offer-price">€1099.99</p>
+                    <div class="offer-timer"></div>
+                    <button class="offer-btn">Comprar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección de Innovación RecBerry-->
+    <section id="innovation-section" class="innovation-section">
+        <div class="innovation-container">
+            <h2 class="innovation-title">Innovación RecBerry</h2>
+            <div class="innovation-grid">
+                <div class="innovation-item">
+                    <div class="innovation-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Tecnología Avanzada</h3>
+                    <p>Nuestros productos incorporan los últimos avances en IA y procesamiento cuántico.</p>
+                </div>
+                <div class="innovation-item">
+                    <div class="innovation-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Comprometidos con el medio ambiente, utilizamos materiales reciclados y energía renovable.
+                    </p>
+                </div>
+                <div class="innovation-item">
+                    <div class="innovation-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>Realidad Aumentada</h3>
+                    <p>Experiencias inmersivas que fusionan el mundo digital con el físico.</p>
+                </div>
+                <div class="innovation-item">
+                    <div class="innovation-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Interfaces Neuronales</h3>
+                    <p>Desarrollamos tecnología que se conecta directamente con tu mente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="innovation-background"></div>
+    </section>
+
+
+
+    <!-- Sección de Feedback de la comunidad -->
+    <section id="feedback" class="feedback-section">
+        <div class="feedback-slider-container">
+            <h2 class="feedback-title">Comentarios de la Comunidad</h2>
+            <div class="feedback-slider-card">
+                <!-- Comentario de la persona 1 -->
+                <div class="feedback-card-item">
+                    <img src="imagenes/Personas_CardSlider/person1.webp" alt="Sergio A.">
+                    <h2 class="feedback-card-name">🚀 Sergio A.</h2>
+                    <p class="feedback-card-paragraph">"RecBerry superó mis expectativas. Compré un cargador minimalista
+                        y parece sacado del futuro. ¡Increíble diseño y funcionalidad!"</p>
+                </div>
+
+                <!-- Comentario de la persona 2 -->
+                <div class="feedback-card-item">
+                    <img src="imagenes/Personas_CardSlider/persona2.jpg" alt="Nuria R.">
+                    <h2 class="feedback-card-name">🎨 Nuria R.</h2>
+                    <p class="feedback-card-paragraph">"Amo el estilo de esta tienda. Compré unos auriculares con luces
+                        LED dinámicas y me siento en una película de ciencia ficción. ¡Marketing brutal!"</p>
+                </div>
+
+                <!-- Comentario de la persona 3 -->
+                <div class="feedback-card-item">
+                    <img src="imagenes/Personas_CardSlider/person3.webp" alt="Santy S.">
+                    <h2 class="feedback-card-name">🔥 Santy S.</h2>
+                    <p class="feedback-card-paragraph">"No solo la calidad es excelente, sino que la experiencia de
+                        compra es única. La presentación del producto me dejó sin palabras. ¡10/10!"</p>
+                </div>
+
+                <!-- Comentario de la persona 4 -->
+                <div class="feedback-card-item">
+                    <img src="imagenes/Personas_CardSlider/person4.webp" alt="Valentina R.">
+                    <h2 class="feedback-card-name">🌟 Valentina R.</h2>
+                    <p class="feedback-card-paragraph">"Compré una lámpara inteligente de RecBerry y es la mejor
+                        decisión que tomé. Se adapta a mi ambiente y la app es súper intuitiva."</p>
+                </div>
+
+                <!-- Comentario de la persona 5 -->
+                <div class="feedback-card-item">
+                    <img src="imagenes/Personas_CardSlider/person5.webp" alt="Jairo M.">
+                    <h2 class="feedback-card-name">🎧 Jairo M.</h2>
+                    <p class="feedback-card-paragraph">"La tienda más creativa que he visto. Compré un teclado mecánico
+                        modular y cada detalle está perfectamente pensado. ¡Recomendada al 100%!"</p>
+                </div>
+
+                <!-- Comentario de la persona 6 -->
+                <div class="feedback-card-item">
+                    <img src="imagenes/Personas_CardSlider/person6.webp" alt="Camila S.">
+                    <h2 class="feedback-card-name">⚡ Camila S.</h2>
+                    <p class="feedback-card-paragraph">"RecBerry es otro nivel. Productos modernos, marketing impactante
+                        y atención al cliente impecable. ¡Definitivamente volveré a comprar!"</p>
+                </div>
+
+                <!-- Comentario de la persona 7 -->
+                <div class="feedback-card-item">
+                    <img src="imagenes/Personas_CardSlider/person7.webp" alt="WillyRex G.">
+                    <h2 class="feedback-card-name">💡 WillyRex G.</h2>
+                    <p class="feedback-card-paragraph">"Me encanta cómo RecBerry combina tecnología y diseño. Compré una
+                        base de carga inalámbrica y parece sacada de un concepto futurista. ¡Espectacular!"</p>
+                </div>
+
+                <button id="feedback-btn-prev" class="feedback-btn">⇦</button>
+                <button id="feedback-btn-next" class="feedback-btn">⇨</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección de Integración de IA -->
+    <section id="ai-integration" class="ai-integration">
+        <div class="ai-container">
+            <h2 class="ai-title">Inteligencia Artificial en RecBerry</h2>
+            <p class="ai-subtitle">Descubre cómo la IA está revolucionando nuestros productos y servicios</p>
+
+            <div class="ai-grid">
+                <div class="ai-card">
+                    <h3>IA en Nuestros Productos</h3>
+                    <button class="ai-expand-btn">Explorar</button>
+                    <div class="ai-content">
+                        <p>Nuestros dispositivos incorporan algoritmos de IA de última generación para ofrecer
+                            experiencias personalizadas y predictivas.</p>
+                        <ul>
+                            <li>RecHeadset: Ajuste de audio adaptativo basado en el entorno y patrones de uso</li>
+                            <li>RecVisuals: Reconocimiento de objetos y información contextual en tiempo real</li>
+                            <li>RecBook: Optimización de rendimiento y batería según los hábitos del usuario</li>
+                            <li>RecBand: Análisis predictivo de salud y recomendaciones personalizadas</li>
+                            <li>RecNtendho: Ajuste dinámico de dificultad en juegos basado en el rendimiento del
+                                jugador
+                            </li>
+                        </ul>
+                        <div class="ai-feature-showcase">
+                            <h4>Destacado: RecAI Engine</h4>
+                            <p>Nuestro motor de IA propietario que potencia todos nuestros dispositivos:</p>
+                            <ul>
+                                <li>Aprendizaje continuo y adaptación a las preferencias del usuario</li>
+                                <li>Procesamiento de lenguaje natural avanzado para interacciones más naturales</li>
+                                <li>Algoritmos de visión por computadora para realidad aumentada de alta precisión
+                                </li>
+                                <li>Redes neuronales optimizadas para eficiencia energética</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <h3>Asistente Virtual RecBerry</h3>
+                    <button class="ai-expand-btn">Explorar</button>
+                    <div class="ai-content">
+                        <p>Nuestro asistente virtual impulsado por IA ofrece soporte personalizado 24/7.</p>
+                        <div class="ai-chat-demo">
+                            <div class="chat-messages">
+                                <p class="user-message">¿Cómo puedo actualizar mi RecHeadset?</p>
+                                <p class="ai-message">Para actualizar tu RecHeadset, sigue estos pasos:
+                                    1. Conecta tu dispositivo a la app RecBerry.
+                                    2. Ve a "Configuración" > "Actualizaciones".
+                                    3. Si hay una actualización disponible, haz clic en "Instalar".
+                                    ¿Necesitas más ayuda?</p>
+                                <p class="user-message">¿Qué mejoras trae la última actualización?</p>
+                                <p class="ai-message">La última actualización para RecHeadset incluye:
+                                    - Mejora en la cancelación de ruido adaptativa
+                                    - Nuevo modo de audio espacial para gaming
+                                    - Optimización de batería
+                                    - Integración mejorada con RecVisuals
+                                    ¿Quieres que te explique alguna función en detalle?</p>
+                            </div>
+                            <input type="text" class="chat-input" placeholder="Escribe tu pregunta...">
+                            <button class="chat-send">Enviar</button>
+                        </div>
+                        <div class="ai-assistant-features">
+                            <h4>Capacidades del Asistente Virtual</h4>
+                            <ul>
+                                <li>Resolución de problemas técnicos en tiempo real</li>
+                                <li>Recomendaciones personalizadas de productos</li>
+                                <li>Programación de citas de servicio y seguimiento</li>
+                                <li>Actualizaciones proactivas sobre nuevas características</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <h3>IA en Investigación y Desarrollo</h3>
+                    <button class="ai-expand-btn">Explorar</button>
+                    <div class="ai-content">
+                        <p>Utilizamos IA para acelerar nuestros procesos de I+D y crear productos innovadores.</p>
+                        <div class="ai-progress">
+                            <div class="progress-item">
+                                <span>Optimización de Diseño</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <span>Predicción de Tendencias</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <span>Simulación de Productos</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <span>Análisis de Feedback de Usuarios</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ai-research-highlights">
+                            <h4>Proyectos de Investigación Destacados</h4>
+                            <ul>
+                                <li>Interfaces cerebrales no invasivas para control de dispositivos</li>
+                                <li>Algoritmos de compresión cuántica para transferencia de datos ultrarrápida</li>
+                                <li>Materiales inteligentes auto-reparables para dispositivos más duraderos</li>
+                                <li>Sistemas de IA éticos y transparentes para toma de decisiones</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-showcase">
+                <h3>Descubre el Futuro con RecBerry AI</h3>
+                <div class="showcase-content">
+                    <div class="showcase-text">
+                        <p>Nuestra tecnología de IA está en constante evolución. Explora cómo estamos dando forma al
+                            futuro de la tecnología de consumo.</p>
+                        <ul class="ai-future-list">
+                            <li>Dispositivos que aprenden y evolucionan con el usuario</li>
+                            <li>Ecosistemas inteligentes que se adaptan a tu estilo de vida</li>
+                            <li>Interacciones hombre-máquina más naturales e intuitivas</li>
+                            <li>Soluciones personalizadas para salud, productividad y entretenimiento</li>
+                        </ul>
+                    </div>
+                    <div class="showcase-visual">
+                        <div class="ai-node" data-tooltip="Procesamiento de Lenguaje Natural"></div>
+                        <div class="ai-node" data-tooltip="Visión por Computadora"></div>
+                        <div class="ai-node" data-tooltip="Aprendizaje Profundo"></div>
+                        <div class="ai-node" data-tooltip="Computación Cuántica"></div>
+                        <div class="ai-node" data-tooltip="Redes Neuronales"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-ethics">
+                <h3>Nuestro Compromiso con la IA Ética</h3>
+                <p>En RecBerry, creemos que la IA debe desarrollarse y utilizarse de manera responsable. Nuestros
+                    principios de IA ética incluyen:</p>
+                <ul>
+                    <li>Transparencia en los algoritmos y toma de decisiones</li>
+                    <li>Privacidad y seguridad de datos como prioridad</li>
+                    <li>Diseño inclusivo para evitar sesgos y discriminación</li>
+                    <li>Supervisión humana en decisiones críticas</li>
+                    <li>Compromiso con el impacto social positivo</li>
+                </ul>
+                <button id="ia-etica-btn" class="learn-more-btn">Aprende más sobre nuestra IA Ética</button>
+            </div>
+
+            <div class="ai-partnership">
+                <h3>Colaboraciones en IA</h3>
+                <p>Trabajamos con líderes de la industria y instituciones académicas para impulsar la innovación en
+                    IA:
+                </p>
+                <div class="partner-logos">
+                    <img src="imagenes/logos/mit-logo.png" alt="MIT">
+                    <img src="imagenes/logos/stanford-logo.png" alt="Stanford">
+                    <img src="imagenes/logos/google-ia-logo.png" alt="Google AI">
+                    <img src="imagenes/logos/nvidia-logo.png" alt="NVIDIA">
+                </div>
+            </div>
+
+            <div class="ai-future">
+                <h3>El Futuro de la IA en RecBerry</h3>
+                <div class="future-timeline">
+                    <div class="timeline-item">
+                        <div class="year">2024</div>
+                        <div class="event">Lanzamiento de RecAI 2.0 con capacidades de procesamiento cuántico</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2025</div>
+                        <div class="event">Introducción de interfaces neuronales en productos de consumo</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2026</div>
+                        <div class="event">Ecosistema RecBerry totalmente integrado con IA predictiva</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2027</div>
+                        <div class="event">Asistentes holográficos con IA avanzada</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#home-slider" class="footer-link">Inicio</a></li>
+                    <li><a href="#carousel-products" class="footer-link">Productos</a></li>
+                    <li><a href="#special-offers" class="footer-link">Ofertas</a></li>
+                    <li><a href="#innovation-section" class="footer-link">Innovación</a></li>
+                    <li><a href="#feedback" class="footer-link">Feedback</a></li>
+                    <li><a href="#ai-integration" class="footer-link">AI Integration</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="enlaces-interesantes/Preguntas Frecuentes/preguntas-frecuentes.html"
+                            class="footer-link">FAQ</a></li>
+                    <li><a href="enlaces-interesantes/Politica de Envios/politica-de-envios.html"
+                            class="footer-link">Envíos</a></li>
+                    <li><a href="enlaces-interesantes/Politica de Devoluciones/politica-de-devoluciones.html"
+                            class="footer-link">Devoluciones</a></li>
+                    <li><a href="enlaces-interesantes/Formulario de Contacto/formulario-contacto.html"
+                            class="footer-link">Contacto</a>
+                    </li>
+                    <li><a href="enlaces-interesantes/Sobre Nosotros/sobre-nosotros.html" class="footer-link">Sobre
+                            Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="enlaces-interesantes/Politica de Privacidad/politica-de-privacidad.html"
+                            class="footer-link">Privacidad</a>
+                    </li>
+                    <li><a href="enlaces-interesantes/Terminos y Condiciones/terminos-y-condiciones.html"
+                            class="footer-link">Términos</a>
+                    </li>
+                    <li><a href="enlaces-interesantes/Cookies/cookies.html" class="footer-link">Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/rec_berry" class="social-icon" target="_blank"><i
+                            class="fab fa-instagram" target="_blank"></i></a>
+                    <a href="https://www.facebook.com/share/1ByCXumYTc/" class="social-icon" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/rrecberry" class="social-icon" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@RecBerry" class="social-icon" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="newsletter">
+                <h3>Suscríbete a nuestro newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <div class="payment-methods">
+                <img src="imagenes/footer/Metodos de Pago/payment-visa.png" alt="Visa">
+                <img src="imagenes/footer/Metodos de Pago/payment-mastercard.svg" alt="Mastercard">
+                <img src="imagenes/footer/Metodos de Pago/payment-paypal.png" alt="PayPal">
+            </div>
+            <p class="copyright">&copy; 2025 RecBerry. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón para volver arriba -->
+    <button id="back-to-top" class="back-to-top-btn" title="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="home-script.js"></script>
+
+</body>
+
+</html>
