@@ -1,4 +1,4 @@
-# 🌟 RecBerry — Revolucionando la Tecnología con Estilo y Inteligencia
+# 🌟 RecBerry — Revolucionando la Tecnolog
 
 ¡Bienvenido al repositorio oficial del proyecto **RecBerry**! 🚀  
 Una empresa simulada que fusiona **Inteligencia Artificial** con productos tecnológicos de vanguardia y un enfoque exquisito en el **diseño estético**.
